@@ -1,6 +1,7 @@
 package tp04ex01;
 
 import java.util.Scanner;
+import java.text.DateFormat;
 
 class Data {
 
@@ -20,6 +21,7 @@ class Data {
         mostra1();
         mostra2();
         System.out.print("Total de dias transcorridos: " + diasTranscorridos());
+        apresentaDataAtual();
     }
 
     public Data(int dia, int mes, int ano) {
@@ -136,6 +138,9 @@ class Data {
             }
         }
         return total;
+    }
+    void apresentaDataAtual(){
+        DateFormat atual = DateFormat.getDateInstance(DateFormat.FULL);
     }
 }
 
